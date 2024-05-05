@@ -3,10 +3,37 @@
   color: var(--color_1);
   font-family: "New-YorkerC";
   font-weight: lighter;
-  position: absolute;
   width: 525px;
   height: 168px;
-  top: 191px;
-  left: 200px;
   font-size: 73px;
+}
+.left_side {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 91px;
+  left: 3px;
+}
+.home_big_image {
+  width: 488px;
+  height: 604px;
+  position: relative;
+  top: 80px;
+  right: 3px;
+}
+.home_view {
+  display: flex;
+  height: 755px;
+  width: 1200px;
+  justify-content: space-between;
+}
+.desc {
+  width: 276px;
+  height: 43px;
+  font-family: var(--raleway_style);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+  padding-top: 56px;
 }

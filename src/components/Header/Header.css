@@ -49,7 +49,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  padding-top: 26px;
+  margin-top: 28px;
 }
 
 @media screen and (max-width: 1299px) {
@@ -74,6 +74,7 @@ nav {
     background-color: var(--color_1);
     transition: 0.3s ease-in-out;
     border-radius: 25px;
+    z-index: 1;
   }
   .navbar.disable {
     position: relative;
@@ -96,5 +97,8 @@ nav {
   }
   .medium_size {
     display: block;
+  }
+  .navbar li a:hover {
+    color: var(--color_2);
   }
 }

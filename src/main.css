@@ -7,6 +7,10 @@
   --color_2: #5b6158;
   --color_bg: #fefbf7;
 }
+body{
+    background-color: var(--color_bg);
+    margin: 0;
+}
 .main {
   margin: 0 auto;
   display: flex;
@@ -14,7 +18,7 @@
   justify-content: center;
   border: 1px solid red;
   flex-direction: column;
-  width: 1260px;
+  width: 1194px;
 }
 @media screen and (max-width: 1299px) {
   .main {
