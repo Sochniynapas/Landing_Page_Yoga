@@ -1,0 +1,13 @@
+:root {
+    --bookman_style: "Bookman Old Style";
+    --raleway_style: "Raleway";
+    --color_1: #789776;
+    --color_2: #5B6158;
+    --color_bg: #FEFBF7;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
