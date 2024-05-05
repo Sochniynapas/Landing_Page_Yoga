@@ -1,42 +1,100 @@
 @import url("../../main.css");
 
 .page_elements {
-    font-family: var(--raleway_style);
-    color: var(--color_2);
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 16px;
 }
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 0;
 }
 .navbar li {
-    list-style: none;
-    padding: 0 20px;
+  list-style: none;
+  padding: 0 20px;
 }
-.navbar li a{
-    text-decoration: none;
-    font-size: 13px;
-    transition: 0.3s ease-in-out;
+.navbar li a {
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s ease-in-out;
 }
-.navbar li a:hover{
-    color: var(--color_1);
+.navbar li a:hover {
+  color: var(--color_1);
 }
 .balance_and_svg {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+.phone_and_svg {
+  display: flex;
+  align-items: center;
+}
+.phone_and_svg span {
+  padding-left: 10px;
 }
 .balance_and_svg .balance {
   font-family: var(--bookman_style);
   color: var(--color_1);
   font-size: 12px;
 }
+.medium_size {
+  display: none;
+}
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1200px;
   height: 50px;
+  width: 1260px;
   padding-top: 26px;
+}
+
+@media screen and (max-width: 1299px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 769px;
+    padding-top: 26px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    top: 110px;
+    left: 470px;
+    padding: 20px 0 20px 0;
+    width: 152px;
+    background-color: var(--color_1);
+    transition: 0.3s ease-in-out;
+    border-radius: 25px;
+  }
+  .navbar.disable {
+    position: relative;
+    top: -200px;
+  }
+  .navbar li {
+    list-style: none;
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+  .navbar li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--color_bg);
+  }
+  .phone_and_svg {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+  }
+  .medium_size {
+    display: block;
+  }
 }

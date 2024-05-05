@@ -6,6 +6,7 @@ const MainPage = () => {
       <div className="home">
         <header>
           <Header />
+          
         </header>
       </div>
     </>
