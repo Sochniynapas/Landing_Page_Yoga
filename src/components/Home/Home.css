@@ -1,0 +1,12 @@
+@import url("../../main.css");
+.title {
+  color: var(--color_1);
+  font-family: "New-YorkerC";
+  font-weight: lighter;
+  position: absolute;
+  width: 525px;
+  height: 168px;
+  top: 191px;
+  left: 200px;
+  font-size: 73px;
+}

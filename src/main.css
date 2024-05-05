@@ -1,18 +1,19 @@
+@import url(./fonts.css);
 :root {
   --bookman_style: "Bookman Old Style";
   --raleway_style: "Raleway";
-  --new-yorkerc_style: "New-YorkerC_style";
+  --new-yorkerc_style: "New-YorkerC";
   --color_1: #789776;
   --color_2: #5b6158;
   --color_bg: #fefbf7;
 }
-
 .main {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid red;
+  flex-direction: column;
   width: 1260px;
 }
 @media screen and (max-width: 1299px) {
