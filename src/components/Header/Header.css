@@ -44,11 +44,11 @@
 }
 
 nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  width: 1260px;
   padding-top: 26px;
 }
 

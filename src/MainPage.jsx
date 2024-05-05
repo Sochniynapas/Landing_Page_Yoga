@@ -1,15 +1,13 @@
 import Header from "./components/Header/Header"
+import Home from "./components/Home/Home"
+import "./main.css"
 
 const MainPage = () => {
   return (
-    <>
-      <div className="home">
-        <header>
-          <Header />
-          
-        </header>
-      </div>
-    </>
+    <div className="main">
+      <Header />
+      <Home />
+    </div>
   )
 }
 
