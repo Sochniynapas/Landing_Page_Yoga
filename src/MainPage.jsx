@@ -1,11 +1,15 @@
-import { FormLabel } from "react-bootstrap"
+import Header from "./components/Header/Header"
 
 const MainPage = () => {
-
-    return(
-        <FormLabel>Start develop</FormLabel>
-    )
-
+  return (
+    <>
+      <div className="home">
+        <header>
+          <Header />
+        </header>
+      </div>
+    </>
+  )
 }
 
 export default MainPage

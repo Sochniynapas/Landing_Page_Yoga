@@ -1,0 +1,42 @@
+@import url("../../main.css");
+
+.page_elements {
+    font-family: var(--raleway_style);
+    color: var(--color_2);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s ease-in-out;
+}
+.navbar li a:hover{
+    color: var(--color_1);
+}
+.balance_and_svg {
+    display: flex;
+    align-items: center;
+}
+.balance_and_svg .balance {
+  font-family: var(--bookman_style);
+  color: var(--color_1);
+  font-size: 12px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 50px;
+  padding-top: 26px;
+}
