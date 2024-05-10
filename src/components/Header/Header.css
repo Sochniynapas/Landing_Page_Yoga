@@ -59,7 +59,7 @@ nav {
     justify-content: space-between;
     height: 50px;
     width: 769px;
-    padding-top: 26px;
+    margin-top: 19px;
   }
   .navbar {
     display: flex;
@@ -94,6 +94,32 @@ nav {
     display: flex;
     align-items: center;
     padding-left: 200px;
+  }
+  .medium_size {
+    display: block;
+  }
+  .navbar li a:hover {
+    color: var(--color_2);
+  }
+}
+@media screen and (max-width: 799px) {
+  nav {
+    height: 50px;
+    width: 375px;
+    margin-top: 19px;
+  }
+  .navbar {
+    top: 120px;
+    left: 120px;
+    padding: 20px 0 20px 0;
+    position: relative;
+  }
+  .navbar.disable {
+    position: relative;
+    top: -200px;
+  }
+  .phone_and_svg {
+    padding-left: 0;
   }
   .medium_size {
     display: block;
