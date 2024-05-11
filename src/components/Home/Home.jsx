@@ -27,6 +27,13 @@ const Home = () => {
           backgroundSize: "cover",
         }}
       />
+      <div
+        className="f_ph_flower"
+        style={{
+          backgroundImage: "url('/src/components/Icons/Phone_Flower_1.svg')",
+          backgroundSize: "cover",
+        }}
+      />
       <div className="sign_up_btn">
         <div
           className="sign_up_btn"

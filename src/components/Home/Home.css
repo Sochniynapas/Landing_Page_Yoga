@@ -43,6 +43,7 @@
   grid-area: 8 / 5 / 9 / 6;
   width: 155px;
   height: 155px;
+  cursor: pointer;
 }
 .under_flower {
   width: 71px;
@@ -86,7 +87,9 @@
   opacity: 0px;
   margin-top: 25px;
 }
-
+.f_ph_flower{
+  display: none;
+}
 .num {
   font-family: var(--new-yorkerc_style);
   font-size: 36px;
@@ -341,5 +344,121 @@
     height: 178px;
     background-repeat: no-repeat;
     z-index: -1;
+  }
+  .f_ph_flower{
+    display: none;
+  }
+}
+@media screen and (max-width: 799px) {
+  .title {
+    font-weight: 400;
+    text-align: center;
+    width: 350px;
+    height: 91px;
+    font-size: 48px;
+    padding-left: 11px;
+    grid-area: 2 / 1 / 4 / 13;
+    
+  }
+  .home_big_image {
+    width: 327px;
+    height: 380px;
+    grid-area: 6 / 2 / 9 / 13;
+    margin-left: 9px;
+  }
+  .home_view {
+    height: 950px;
+    width: 375px;
+    grid-template-rows: repeat(19, 50px);
+    grid-template-columns: repeat(15, 25px);
+  }
+  .desc {
+    width: 296px;
+    height: 32px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 13px;
+    grid-area: 14 / 2 / 15 / 5;
+  }
+  .sign_up_btn {
+    grid-area: 6 / 11 / 7 / 15;
+    width: 111px;
+    height: 111px;
+    z-index: 2;
+  }
+  .under_flower {
+    top: -70px;
+    left: 40px;
+    z-index: -1;
+    transition: 0.8s ease-in-out;
+    background-repeat: no-repeat;
+  }
+  .sign_up_btn:hover .under_flower {
+    width: 0px;
+    height: 0px;
+  }
+  .f_m_flower {
+    display: none;
+  }
+  .picture_medit {
+    grid-area: 16 / 2 / 17 / 3;
+    padding-left: 0px;
+  }
+  .short_description {
+    grid-area: 16 / 8 / 17 / 9;
+    padding-top: 30px;
+  }
+  .num_with_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 183px;
+    height: 44px;
+    gap: 8px;
+    opacity: 0px;
+  }
+  
+  .num {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.81px;
+  }
+  .text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+  }
+  .f_ph_flower{
+    width: 122px;
+    height: 126px;
+    display: block;
+    grid-area: 15 / 11 / 16 / 11;
+    position: relative;
+    bottom: 10px;
+    left: 2px;
+  }
+  .gray_line {
+    display: none;
+  }
+  .green_line {
+    display: none;;
+  }
+  .switch_un_the_pict {
+    display: none;
+  }
+  .next_prev_btn {
+    display: none;
+  }
+  .next_prev_btn:hover {
+    display: none;
+  }
+  .next_prev_btn:hover .next_prev_btn_icon path {
+    display: none;
+  }
+  .current_num {
+    display: none;
+  }
+  .len {
+    display: none;
   }
 }
