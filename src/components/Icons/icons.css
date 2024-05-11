@@ -1,0 +1,6 @@
+.clickable {
+  cursor: pointer;
+}
+.next_prev_btn_icon {
+  transition: ease-in-out;
+}
