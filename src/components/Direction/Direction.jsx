@@ -35,13 +35,13 @@ const Direction = () => {
     <div className="direction">
       <span className="title_direct">ВСЕ НАПРАВЛЕНИЯ В ОДНОМ АБОНЕМЕНТЕ</span>
       <span className="desc_direct">
-        Не определились с направлением? Мы подскажем!
+        Не определились с направлением?
+        <br /> Мы подскажем!
       </span>
       <div
         className="direction_image"
         style={{
           backgroundImage: `url(${`/src/components/Images/DirectionImages/picture_direction_${currentImage}.png`})`,
-          backgroundSize: "cover"
         }}
       />
       <div className="buttons_section">
@@ -66,25 +66,30 @@ const Direction = () => {
               <p className="title_section">
                 {allDirections[currentImage - 1].title}
               </p>
-              <div className="calend_time_section">
-                <div
-                  style={{
-                    backgroundImage:
-                      "url('/src/components/Icons/calendar.svg')",
-                    backgroundSize: "cover"
-                  }}
-                />
-                <span>Проходит по: {allDirections[currentImage - 1].days}</span>
-              </div>
-              <div className="calend_time_section">
-                <div
-                  style={{
-                    backgroundImage: "url('/src/components/Icons/timer.svg')",
-                  }}
-                />
-                <span>
-                  Длительность: {allDirections[currentImage - 1].time}
-                </span>
+              <div className="calend_time_container">
+                <div className="calend_time_section">
+                  <div
+                    style={{
+                      backgroundImage:
+                        "url('/src/components/Icons/calendar.svg')",
+                      backgroundSize: "cover",
+                    }}
+                  />
+                  <span>
+                    Проходит по: {allDirections[currentImage - 1].days}
+                  </span>
+                </div>
+                <div className="calend_time_section">
+                  <div
+                    style={{
+                      backgroundImage: "url('/src/components/Icons/timer.svg')",
+                      backgroundSize: "cover"
+                    }}
+                  />
+                  <span>
+                    Длительность: {allDirections[currentImage - 1].time}
+                  </span>
+                </div>
               </div>
             </div>
             <div>
