@@ -52,13 +52,13 @@ nav {
   margin-top: 28px;
 }
 
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 1194px) {
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    width: 769px;
+    width: 695px;
     margin-top: 19px;
   }
   .navbar {
@@ -68,7 +68,7 @@ nav {
     justify-content: flex-start;
     position: relative;
     top: 110px;
-    left: 470px;
+    left: 430px;
     padding: 20px 0 20px 0;
     width: 152px;
     background-color: var(--color_1);
@@ -102,16 +102,18 @@ nav {
     color: var(--color_2);
   }
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 767px) {
   nav {
     height: 50px;
-    width: 375px;
+    width: 327px;
     margin-top: 19px;
   }
   .navbar {
     top: 120px;
     left: 120px;
     padding: 20px 0 20px 0;
+    width: 95px;
+    align-items: center;
     position: relative;
   }
   .navbar.disable {
@@ -120,6 +122,10 @@ nav {
   }
   .phone_and_svg {
     padding-left: 0;
+    padding-right: 10px;
+  }
+  .phone_and_svg span {
+    font-size: 12px;
   }
   .medium_size {
     display: block;
