@@ -8,6 +8,14 @@
   --color_3: #98958B;
   --color_bg: #fefbf7;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
+html {
+  -ms-overflow-style : none;
+  scrollbar-width    : none
+}
+
 body{
     background-color: var(--color_bg);
     margin: 0;

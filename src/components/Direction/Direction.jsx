@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import "../Direction/Direction.css"
 import api from "/src/api/direction.js"
 import { NextBtn, PrevBtn } from "../Icons/icons"
 const Direction = () => {
   const [allDirections, setAllDirections] = useState([])
   const [currentImage, setCurrentImage] = useState(1)
+  const buttonsSectionRef = useRef(null)
 
   const nextImage = () => {
     setCurrentImage((prev) => (prev < 6 ? prev + 1 : 1))
@@ -31,6 +32,15 @@ const Direction = () => {
     getDirections()
   }, [])
 
+  useEffect(() => {
+    if (buttonsSectionRef.current) {
+      const button = buttonsSectionRef.current.children[currentImage - 1]
+      if (button) {
+        button.scrollIntoView({ behavior: "smooth", block: "nearest" })
+      }
+    }
+  }, [currentImage, buttonsSectionRef])
+
   return (
     <div className="direction">
       <span className="title_direct">ВСЕ НАПРАВЛЕНИЯ В ОДНОМ АБОНЕМЕНТЕ</span>
@@ -38,13 +48,14 @@ const Direction = () => {
         Не определились с направлением?
         <br /> Мы подскажем!
       </span>
+      <div className="direct_flower" style={{backgroundImage: "url('/src/components/Icons/Flower_For_Direction.svg')"}}/>
       <div
         className="direction_image"
         style={{
           backgroundImage: `url(${`/src/components/Images/DirectionImages/picture_direction_${currentImage}.png`})`,
         }}
       />
-      <div className="buttons_section">
+      <div className="buttons_section" ref={buttonsSectionRef}>
         {allDirections.map((direction, index) => (
           <button
             key={index}
@@ -55,7 +66,7 @@ const Direction = () => {
             }}
             onClick={() => setCurrentImage(index + 1)}
           >
-            <span>{direction.title}</span>
+            {direction.title}
           </button>
         ))}
       </div>
@@ -83,7 +94,7 @@ const Direction = () => {
                   <div
                     style={{
                       backgroundImage: "url('/src/components/Icons/timer.svg')",
-                      backgroundSize: "cover"
+                      backgroundSize: "cover",
                     }}
                   />
                   <span>

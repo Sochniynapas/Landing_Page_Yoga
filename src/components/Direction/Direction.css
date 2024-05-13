@@ -74,6 +74,15 @@
   border: 1px 0px 0px 0px;
   opacity: 0px;
 }
+.direct_flower{
+  grid-area: 19 / 2 / 20 / 5;
+  width: 429px;
+  height: 290px;
+  background-size: cover;
+  position: relative;
+  right: 30px;
+  top: 17px;
+}
 .calend_time_section span {
   gap: 0px;
   opacity: 0px;
@@ -97,7 +106,6 @@
   grid-area: 9 / 1 / 13 / 5;
   padding-left: 3px;
   position: relative;
-  bottom: 40px;
 }
 .buttons_section button {
   background-color: var(--color_bg);
@@ -108,15 +116,13 @@
   margin-right: 10px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
-}
-.buttons_section button:hover {
-  border: 1px solid var(--color_1);
-}
-.buttons_section span {
   font-family: var(--raleway_style);
   font-size: 14px;
   line-height: 17.5px;
   text-align: left;
+}
+.buttons_section button:hover {
+  border: 1px solid var(--color_1);
 }
 .switch_direction {
   display: flex;
@@ -186,6 +192,9 @@
     grid-template-columns: repeat(14, 50px);
     grid-template-rows: repeat(31, 20px);
   }
+  .direct_flower{
+    display: none;
+  }
   .title_direct {
     font-size: 30px;
     font-weight: 400;
@@ -231,8 +240,6 @@
     padding: 16px 20px 16px 20px;
     margin-right: 4px;
     margin-bottom: 10px;
-  }
-  .buttons_section span {
     font-family: var(--raleway_style);
     font-size: 12px;
     line-height: 15px;
@@ -276,6 +283,9 @@
     height: 51px;
     padding-left: 0px;
   }
+  .direct_flower{
+    display: none;
+  }
   .desc_direct {
     font-size: 16px;
     width: 273px;
@@ -297,7 +307,7 @@
     line-height: 19.5px;
     order: 1;
   }
-  .calend_time_container{
+  .calend_time_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -324,17 +334,21 @@
     line-height: 17.5px;
   }
   .buttons_section {
-    grid-area: 3 / 1 / 4 / 13;
+    grid-area: 3 / 2 / 4 / 13;
+    display: flex;
+    overflow-x: scroll;
     justify-self: center;
-    width: 750px;
+    align-items: center;
+    max-width: 375px;
     padding-left: 3px;
+    padding-bottom: 20px;
+    bottom: 40px;
   }
   .buttons_section button {
     padding: 15px 20px 15px 20px;
     margin-right: 10px;
+    flex-shrink: 0;
     margin-bottom: 10px;
-  }
-  .buttons_section span {
     font-family: var(--raleway_style);
     font-size: 12px;
     line-height: 15px;
