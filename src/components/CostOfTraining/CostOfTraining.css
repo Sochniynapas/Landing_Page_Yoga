@@ -21,6 +21,9 @@
   text-align: left;
   margin-left: 3px;
 }
+.training_phone_flower{
+  display: none;
+}
 .button_div {
   width: 346px;
   display: flex;
@@ -140,6 +143,9 @@
     background-color: var(--color_bg);
     color: var(--color_1);
   }
+  .training_phone_flower{
+    display: none;
+  }
   .cost_title {
     font-size: 30px;
     font-weight: 400;
@@ -205,6 +211,15 @@
     grid-template-columns: repeat(17, 20px);
     grid-template-rows: repeat(16, 50px);
   }
+  .training_phone_flower{
+    display: block;
+    width: 134px;
+    height: 120px;
+    position: relative;
+    bottom: 120px;
+    left: 10px;
+    justify-self: center;
+  }
   .cost_section button {
     display: flex;
     margin-left: 0px;
@@ -260,27 +275,5 @@
     padding-top: 10px;
     padding-bottom: 5px;
     height: 23px;
-  }
-  .cost {
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 37.57px;
-    letter-spacing: 0.007em;
-    text-align: left;
-  }
-  .count {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 38.4px;
-    text-align: left;
-    height: 35px;
-    padding-right: 8px;
-  }
-  .text_trainings {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    text-align: left;
-    width: 120px;
   }
 }

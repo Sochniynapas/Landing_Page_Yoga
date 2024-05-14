@@ -22,16 +22,24 @@ const Costs = () => {
     <div className="cost_section">
       <span className="cost_title">СТОИМОСТЬ НАШИХ ТРЕНИРОВОК</span>
       <div className="cost_description">
-        <span>После покупки абонемента его необходимо{" "}</span>
+        <span>После покупки абонемента его необходимо </span>
         <span style={{ fontWeight: "bold" }}>
           активировать в течении трех месяцев{" "}
         </span>
         с момента приобретения (дата активации - первое занятие).
         <br />
         <br />
-        <span style={{display:"flex"}}>Первая тренировка для новых клиентов бесплатная</span>
+        <span style={{ display: "flex" }}>
+          Первая тренировка для новых клиентов бесплатная
+        </span>
       </div>
-
+      <div
+        className="training_phone_flower"
+        style={{
+          backgroundImage: "url('/src/components/Icons/Phone_Flower_2.svg')",
+          backgroundSize: "cover",
+        }}
+      ></div>
       <div className="cost_count">
         {costTrainingDescriptions.length > 0 && (
           <div className="start_cost_count">
