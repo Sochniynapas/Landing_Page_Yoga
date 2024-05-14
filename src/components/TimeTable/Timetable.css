@@ -1,0 +1,94 @@
+@import url("/src/main.css");
+.timetable_section {
+  display: grid;
+  width: 1200px;
+  height: 663px;
+  grid-template-columns: repeat(24, 50px);
+  grid-template-rows: repeat(33, 20px);
+  padding-top: 120px;
+}
+.timetable_title {
+  font-family: var(--new-yorkerc_style);
+  color: var(--color_1);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 62.4px;
+  letter-spacing: 0.007em;
+  text-align: left;
+  width: 657px;
+  height: 100px;
+  gap: 0px;
+  opacity: 0px;
+  padding-left: 2px;
+}
+.timetable_description {
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  text-align: left;
+  grid-area: 1 / 17 / 3 / 25;
+}
+.days_params_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 3px;
+  grid-area: 10 / 1 / -1 / 15;
+}
+.days_section {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 110px;
+}
+.days_section_text {
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.44px;
+  letter-spacing: 0.05em;
+  opacity: 50%;
+  text-align: left;
+  cursor: pointer;
+}
+.days_section_text:hover {
+  padding-bottom: 15px;
+  position: relative;
+  bottom: 5px;
+  border-bottom: 2px solid var(--color_1);
+}
+.timetable_image {
+  grid-area: 10 / 17 / -1 / -1;
+  margin-right: 3px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.params_section {
+  display: flex;
+  flex-direction: column;
+}
+.single_param {
+  display: flex;
+  height: 61px;
+  border-bottom: 1px solid #cbc8c1;
+  justify-content: space-between;
+  align-items: center;
+}
+.single_param_text {
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.44px;
+  text-align: left;
+  width: 140px;
+}
+.phone_pen_icons{
+    width: 18px;
+    height: 18px;
+}
+.phone_pen_icons:hover {
+    stroke: var(--color_1);
+}
