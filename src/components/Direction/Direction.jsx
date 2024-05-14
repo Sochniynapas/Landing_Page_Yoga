@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import "../Direction/Direction.css"
-import api from "/src/api/direction.js"
+import api from "/src/api/landingApi.js"
 import { NextBtn, PrevBtn } from "../Icons/icons"
 const Direction = () => {
   const [allDirections, setAllDirections] = useState([])

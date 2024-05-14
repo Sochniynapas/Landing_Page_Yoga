@@ -1,3 +1,4 @@
+import Costs from "./components/CostOfTraining/CostOfTraining"
 import Direction from "./components/Direction/Direction"
 import Header from "./components/Header/Header"
 import Home from "./components/Home/Home"
@@ -9,6 +10,7 @@ const MainPage = () => {
       <Header />
       <Home />
       <Direction />
+      <Costs />
     </div>
   )
 }

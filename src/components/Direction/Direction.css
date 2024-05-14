@@ -2,10 +2,10 @@
 .direction {
   display: grid;
   width: 1200px;
-  height: 682px;
+  height: 662px;
   padding-top: 120px;
   grid-template-columns: repeat(12, 100px);
-  grid-template-rows: repeat(34, 20px);
+  grid-template-rows: repeat(33, 20px);
 }
 .title_direct {
   font-family: var(--new-yorkerc_style);
