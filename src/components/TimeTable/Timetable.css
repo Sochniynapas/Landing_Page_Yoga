@@ -70,13 +70,14 @@
   flex-direction: column;
 }
 .single_param {
-  display: flex;
-  height: 61px;
+  display: grid;
+  grid-template-columns: repeat(14, 50px);
+  grid-template-rows: repeat(7, 9px);
   border-bottom: 1px solid #cbc8c1;
   justify-content: space-between;
   align-items: center;
 }
-.single_param_text {
+.name {
   font-family: var(--raleway_style);
   color: var(--color_2);
   font-size: 14px;
@@ -84,10 +85,46 @@
   line-height: 16.44px;
   text-align: left;
   width: 140px;
+  grid-area: 4 / 1 / 4 / 3;
+}
+.time {
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.44px;
+  text-align: left;
+  width: 140px;
+  grid-area: 4 / 4 / 4 / 6;
+}
+.duration {
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.44px;
+  text-align: left;
+  width: 140px;
+  grid-area: 4 / 7 / 4 / 9;
+}
+.teacher {
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.44px;
+  text-align: left;
+  width: 140px;
+  grid-area: 4 / 10 / 4 / 13;
+}
+.phone_pen_div {
+  grid-area: 4 / 13 / 4 / 14;
+  padding-left: 10px;
 }
 .phone_pen_icons {
   width: 18px;
   height: 18px;
+  cursor: pointer;
 }
 .phone_pen_icons svg:hover path {
   fill: var(--color_1);
@@ -112,4 +149,150 @@
   height: 398.92px;
   opacity: 0px;
   z-index: -1;
+}
+@media screen and (max-width: 1194px) {
+  .timetable_section {
+    display: grid;
+    width: 696px;
+    height: 635px;
+    grid-template-columns: repeat(14, 50px);
+    grid-template-rows: repeat(32, 20px);
+    padding-top: 108px;
+  }
+  .single_param {
+    grid-template-rows: repeat(7, 8px);
+  }
+  .timetable_title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    width: 341px;
+    height: 101px;
+  }
+  .timetable_description {
+    padding-left: 30px;
+    grid-area: 1 / 8 / 3 / -1;
+  }
+  .days_params_section {
+    grid-area: 9 / 1 / 32 / -1;
+  }
+  .days_section {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 110px;
+  }
+  .first_tt_flower {
+    bottom: 160px;
+    left: -120px;
+    width: 300.48px;
+    height: 300.1px;
+    transform: rotate(35deg);
+  }
+  .second_tt_flower {
+    position: relative;
+    left: -200px;
+    bottom: -300px;
+    width: 300.19px;
+    height: 290.92px;
+    transform: rotate(120deg);
+    opacity: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .timetable_section {
+    display: grid;
+    width: 327px;
+    height: 748px;
+    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(15, 50px);
+    padding-top: 0px;
+  }
+  .single_param {
+    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(7, 9px);
+    width: 327px;
+  }
+  .timetable_title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.2px;
+    width: 341px;
+    height: 101px;
+  }
+  .timetable_description {
+    padding-left: 0px;
+    padding-top: 20px;
+    grid-area: 3 / 1 / 5 / -1;
+    font-size: 13px;
+  }
+  .timetable_image{
+    display: none;
+  }
+  .days_params_section {
+    padding: 0;
+    width: 327px;
+    grid-area: 5 / 1 / -1 / 15;
+  }
+  .days_section {
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    max-width: 375px;
+    margin-right: 0px;
+    padding-top: 50px;
+    gap: 20px;
+  }
+  .first_tt_flower {
+    display: none;
+  }
+  .second_tt_flower {
+    position: relative;
+    left: 180px;
+    bottom: 100px;
+    width: 150.19px;
+    height: 150.92px;
+    transform: rotate(0deg);
+    opacity: 0px;
+  }
+  .name {
+    font-family: var(--raleway_style);
+    color: var(--color_2);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
+    text-align: left;
+    width: 109px;
+    grid-area: 4 / 1 / 4 / 3;
+  }
+  .time {
+    font-family: var(--raleway_style);
+    color: var(--color_2);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.44px;
+    text-align: left;
+    width: 40px;
+    grid-area: 4 / 7 / 4 / 8;
+  }
+  .duration {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16.44px;
+    text-align: left;
+    width: 40px;
+    grid-area: 4 / 10 / 4 / 11;
+  }
+  .teacher {
+    color: #98958B;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.44px;
+    text-align: left;
+    width: 140px;
+    grid-area: 6 / 1 / 6 / 3;
+  }
+  .phone_pen_div {
+    grid-area: 4 / 14 / 4 / 15;
+    padding-left: 5px;
+  }
 }

@@ -74,11 +74,14 @@ const Timetable = () => {
           <div className="params_section">
             {timetableParams[currentDay - 1][currentDay].map((elem, index) => (
               <div key={index} className="single_param">
-                <span className="single_param_text">{elem.name}</span>
-                <span className="single_param_text">{elem.time}</span>
-                <span className="single_param_text">{elem.duration}</span>
-                <span className="single_param_text">{elem.teacher}</span>
-                <div style={{ display: "flex", flexDirection: "row" }}>
+                <span className="name">{elem.name}</span>
+                <span className="time">{elem.time}</span>
+                <span className="duration">{elem.duration}</span>
+                <span className="teacher">{elem.teacher}</span>
+                <div
+                  className="phone_pen_div"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
                   <div
                     className="phone_pen_icons"
                     style={{
