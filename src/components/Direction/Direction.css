@@ -212,7 +212,7 @@
   }
   .direction_item {
     grid-area: 12 / 8 / 15 / 15;
-    padding-right: 10px;
+    padding-left: 28px;
     bottom: 20px;
   }
   .title_section {
@@ -248,6 +248,7 @@
   .switch_direction {
     top: 0px;
     padding-left: 5px;
+    width: 330px;
     grid-area: 31 / 11 / 32 / 12;
   }
   .green_line_direction {
@@ -297,6 +298,7 @@
     grid-area: 6 / 1 / 8 / 13;
     padding-top: 65px;
     padding-right: 10px;
+    padding-left: 0px;
     bottom: 20px;
     width: 325px;
     position: relative;
@@ -353,11 +355,13 @@
     font-size: 12px;
     line-height: 15px;
     text-align: left;
+    transition: 1s ease-in-out;
   }
   .switch_direction {
     top: 37px;
     left: -12px;
     padding-left: 0px;
+    width: 320px;
     grid-area: 8 / 3 / 12 / 12;
   }
   .green_line_direction {
