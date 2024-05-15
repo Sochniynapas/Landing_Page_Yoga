@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import "./Timetable.css"
 import api from "/src/api/landingApi.js"
 import dayAdapter from "./TimeTable"
+import { Pen, PhoneTimetable } from "../Icons/icons"
 const Timetable = () => {
   const [timetableParams, setTimetableParams] = useState([])
   const [currentDay, setCurrentDay] = useState(1)
@@ -32,7 +33,19 @@ const Timetable = () => {
         Не упустите возможность попробовать что‑то новое и полезное для вашего
         здоровья!
       </span>
-
+      <div
+        className="first_tt_flower"
+        style={{
+          backgroundImage: "url('/src/components/Icons/Tt_Flower_1.svg')",
+        }}
+      ></div>
+      <div
+        className="second_tt_flower"
+        style={{
+          backgroundImage: "url('/src/components/Icons/Tt_Flower_2.svg')",
+          backgroundSize: "cover",
+        }}
+      ></div>
       {timetableParams.length > 0 && (
         <div className="days_params_section">
           <div className="days_section">
@@ -49,7 +62,7 @@ const Timetable = () => {
                         position: "relative",
                         bottom: 5,
                         paddingBottom: 15,
-                        borderBottom: "2px solid #789776"
+                        borderBottom: "2px solid #789776",
                       }
                     : null
                 }
@@ -59,7 +72,7 @@ const Timetable = () => {
             ))}
           </div>
           <div className="params_section">
-            {timetableParams[currentDay-1][currentDay].map((elem, index) => (
+            {timetableParams[currentDay - 1][currentDay].map((elem, index) => (
               <div key={index} className="single_param">
                 <span className="single_param_text">{elem.name}</span>
                 <span className="single_param_text">{elem.time}</span>
@@ -69,18 +82,20 @@ const Timetable = () => {
                   <div
                     className="phone_pen_icons"
                     style={{
-                      backgroundImage: "url('/src/components/Icons/pen.svg')",
                       backgroundSize: "cover",
                     }}
-                  ></div>
+                  >
+                    <Pen />
+                  </div>
                   <div
                     className="phone_pen_icons"
                     style={{
-                      backgroundImage: "url('/src/components/Icons/call.svg')",
                       backgroundSize: "cover",
                       marginLeft: 20,
                     }}
-                  ></div>
+                  >
+                    <PhoneTimetable />
+                  </div>
                 </div>
               </div>
             ))}

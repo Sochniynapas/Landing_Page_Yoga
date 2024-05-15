@@ -85,10 +85,31 @@
   text-align: left;
   width: 140px;
 }
-.phone_pen_icons{
-    width: 18px;
-    height: 18px;
+.phone_pen_icons {
+  width: 18px;
+  height: 18px;
 }
-.phone_pen_icons:hover {
-    stroke: var(--color_1);
+.phone_pen_icons svg:hover path {
+  fill: var(--color_1);
+  stroke: var(--color_1);
+}
+.first_tt_flower {
+  position: relative;
+  bottom: 260px;
+  left: -200px;
+  width: 338.48px;
+  height: 421.1px;
+  opacity: 0.2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.second_tt_flower {
+  position: relative;
+  left: 890px;
+  bottom: 280px;
+  width: 377.19px;
+  height: 398.92px;
+  opacity: 0px;
+  z-index: -1;
 }
