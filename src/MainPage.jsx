@@ -2,7 +2,8 @@ import Costs from "./components/CostOfTraining/CostOfTraining"
 import Direction from "./components/Direction/Direction"
 import Header from "./components/Header/Header"
 import Home from "./components/Home/Home"
-import Timetable from "./components/TimeTable/Timetable"
+import Teachers from "./components/Teachers/Teachers"
+import Timetable from "./components/TimeTable/Timetable.jsx"
 import "./main.css"
 
 const MainPage = () => {
@@ -13,6 +14,7 @@ const MainPage = () => {
       <Direction />
       <Costs />
       <Timetable />
+      <Teachers />
     </div>
   )
 }
