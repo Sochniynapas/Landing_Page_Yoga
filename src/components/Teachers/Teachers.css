@@ -238,6 +238,7 @@
   .next_teach_image {
     width: 154px;
     height: 197px;
+    opacity: 100%;
   }
   .switch_tch {
     display: flex;

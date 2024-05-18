@@ -38,7 +38,6 @@ const Teachers = () => {
       const responseData = await getTeachersInfo()
       if (responseData) {
         setTeachersInfo(responseData)
-        console.log(responseData)
       }
     }
     teachersInfoFunc()
