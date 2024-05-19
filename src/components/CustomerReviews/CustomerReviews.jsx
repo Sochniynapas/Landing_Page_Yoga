@@ -47,6 +47,12 @@ const CustomerReviews = () => {
   return (
     <section className="reviews_section">
       <span className="reviews_title">НАШИ ДОВОЛЬНЫЕ КЛИЕНТЫ</span>
+      <div
+        className="phone_flower_cr"
+        style={{
+          backgroundImage: "url('/src/components/Icons/Phone_Flower_CR.svg')",
+        }}
+      ></div>
       <button className="send_review">ОСТАВИТЬ ОТЗЫВ</button>
       <div className="customer_reviews_area">
         {allCustomersReviews.length > 0 && (
@@ -59,7 +65,7 @@ const CustomerReviews = () => {
                   elements.push(
                     <div key={i} className="current_customer">
                       <div className="current_circle">
-                        <Pose num={Number(element.id)}/>
+                        <Pose num={Number(element.id)} />
                       </div>
                       <span className="current_review_name">
                         {element.name}
@@ -73,13 +79,19 @@ const CustomerReviews = () => {
                           style={{
                             borderBottom: "1px solid #fefbf7",
                             padding: "10px 0px 0px 0px",
-                            margin: 0
+                            margin: 0,
                           }}
                           className="current_review_text"
                         >
                           Подробнее
                         </p>
-                        <div className="current_flower" style={{backgroundImage:"url('/src/components/Icons/Review_Flower.svg')"}} />
+                        <div
+                          className="current_flower"
+                          style={{
+                            backgroundImage:
+                              "url('/src/components/Icons/Review_Flower.svg')",
+                          }}
+                        />
                         <span
                           style={{ padding: "10px 0px 0px 0px" }}
                           className="current_review_text"
@@ -93,7 +105,7 @@ const CustomerReviews = () => {
                   elements.push(
                     <div key={i} className="customer">
                       <div className="circle">
-                        <Pose num={Number(element.id)}/>
+                        <Pose num={Number(element.id)} />
                       </div>
                       <span className="review_name">{element.name}</span>
                       <div className="review_divider"></div>
