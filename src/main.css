@@ -21,6 +21,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 .main {
   margin: 0 auto;
