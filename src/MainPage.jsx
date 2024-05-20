@@ -1,6 +1,7 @@
 import Costs from "./components/CostOfTraining/CostOfTraining"
 import CustomerReviews from "./components/CustomerReviews/CustomerReviews.jsx"
 import Direction from "./components/Direction/Direction"
+import FAQ from "./components/FAQ/FAQ.jsx"
 import Header from "./components/Header/Header"
 import Home from "./components/Home/Home"
 import Teachers from "./components/Teachers/Teachers"
@@ -17,6 +18,7 @@ const MainPage = () => {
       <Timetable />
       <Teachers />
       <CustomerReviews />
+      <FAQ />
     </div>
   )
 }
