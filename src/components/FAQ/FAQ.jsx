@@ -35,7 +35,7 @@ const FAQ = () => {
       question: "Для моего возраста подойдут занятия?",
       answer:
         "Вы можете записаться на занятия через наш сайт или по телефону. Так же вы можете прийти в наш центр и записаться на ресепшене",
-    }
+    },
   ]
 
   const handleChangeState = (num) => {
@@ -47,6 +47,9 @@ const FAQ = () => {
   return (
     <div className="FAQ_section">
       <span className="FAQ_title">Всегда на связи с клиентом </span>
+      <div className="FAQ_Flower_container">
+        <div className="FAQ_Flower" style={{backgroundImage: "url('/src/components/Icons/FAQ_Flower.svg')"}}></div>
+      </div>
       <div className="qu_an_image">
         <div className="questions_answers">
           {arrayOfFAQ.map((elem, index) =>

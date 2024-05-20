@@ -7,6 +7,17 @@
   height: auto;
   padding-top: 120px;
 }
+.FAQ_Flower_container {
+  position: relative;
+    top: -100px;
+    left: 1000px;
+}
+.FAQ_Flower{
+    position: absolute;
+    width: 445px;
+    height: 500px;
+    background-size: contain;
+}
 .FAQ_title {
   font-family: var(--new-yorkerc_style);
   color: var(--color_1);
@@ -149,6 +160,17 @@
     width: 298px;
     height: 63px;
   }
+  .FAQ_Flower_container {
+    position: relative;
+      top: -150px;
+      left: 380px;
+  }
+  .FAQ_Flower{
+      position: absolute;
+      width: 395px;
+      height: 450px;
+      background-size: contain;
+  }
   .FAQ_image {
     width: 338px;
     height: 467px;
@@ -200,6 +222,17 @@
     line-height: 31.2px;
     width: 326px;
     height: 54px;
+  }
+  .FAQ_Flower_container {
+    position: relative;
+      top: -55px;
+      left: 130px;
+  }
+  .FAQ_Flower{
+      position: absolute;
+      width: 245px;
+      height: 300px;
+      background-size: contain;
   }
   .qu_an_image {
     display: flex;
