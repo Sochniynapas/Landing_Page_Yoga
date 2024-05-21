@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { MainIcon, MenuIcon, PhoneIcon } from "../Icons/icons.jsx"
+import { MenuIcon, PhoneIcon } from "../Icons/icons.jsx"
 import "./Header.css"
+import { BalanceSvg } from "../RepetitiveComponents/RepComponents.jsx"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,10 +13,7 @@ const Header = () => {
 
   return (
     <nav>
-      <div className="balance_and_svg">
-        <MainIcon />
-        <span className="balance">BALANCE</span>
-      </div>
+      <BalanceSvg />
       <ul className={isOpen ? "navbar" : "navbar disable"}>
         <li>
           <a href="" className="page_elements">

@@ -53,7 +53,6 @@ body {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
-
 .checker_input:checked::before {
   content: "✓";
   display: block;
