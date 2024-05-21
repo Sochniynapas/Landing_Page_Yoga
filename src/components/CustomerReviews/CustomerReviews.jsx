@@ -45,7 +45,7 @@ const CustomerReviews = () => {
   const greenLineWidth = `${16.6 + (currentCustomerReview - 1) * 16.6}%`
 
   return (
-    <section className="reviews_section">
+    <section id="cust_reviews" className="reviews_section">
       <span className="reviews_title">НАШИ ДОВОЛЬНЫЕ КЛИЕНТЫ</span>
       <div
         className="phone_flower_cr"

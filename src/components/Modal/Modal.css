@@ -1,0 +1,108 @@
+@import url("/src/main.css");
+
+.modal {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(233, 227, 227, 0.5);
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+}
+.active_modal {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "title"
+    "dir_name"
+    "phone"
+    "comment"
+    "button"
+    "policy";
+  border-radius: 10%;
+  padding: 56px 56px 56px 56px;
+  gap: 36px;
+  background-color: var(--color_bg);
+}
+.active_modal span {
+    width: 199px;
+}
+.modal_title {
+  font-family: var(--new-yorkerc_style);
+  grid-area: title;
+  color: var(--color_1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  letter-spacing: 0.007em;
+  width: 226px;
+  text-align: left;
+  margin: 0;
+  gap: 0px;
+  opacity: 0px;
+  padding-left: 2px;
+}
+.modal_name {
+  grid-area: dir_name;
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  outline: none;
+  margin-left: 3px;
+  border: 0;
+  background-color: var(--color_bg);
+  border-bottom: 1px solid var(--color_3);
+}
+.modal_phone {
+  grid-area: phone;
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  outline: none;
+  margin-left: 3px;
+  border: 0;
+  background-color: var(--color_bg);
+  border-bottom: 1px solid var(--color_3);
+}
+.modal_comment {
+  grid-area: comment;
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  outline: none;
+  margin-left: 3px;
+  border: 0;
+  background-color: var(--color_bg);
+  border-bottom: 1px solid var(--color_3);
+}
+.checker_modal {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  grid-area: policy;
+}
+.modal_send {
+  grid-area: button;
+  font-family: var(--raleway_style);
+  background-color: var(--color_1);
+  color: var(--color_bg);
+  border: 1px solid var(--color_1);
+  padding: 24px, 56px, 24px, 56px;
+  border-radius: 52.99px;
+  transition: 0.3s ease-in-out;
+  font-size: 15px;
+  line-height: 17.5px;
+  gap: 13.25px;
+  height: 55px;
+  width: 248px;
+  cursor: pointer;
+  justify-self: center;
+  text-align: center;
+}
+.modal_send:hover {
+    background-color: var(--color_bg);
+    color: var(--color_1);
+  }

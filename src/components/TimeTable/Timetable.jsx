@@ -3,12 +3,20 @@ import "./Timetable.css"
 import api from "/src/api/landingApi.js"
 import dayAdapter from "./TimeTable"
 import { Pen, PhoneTimetable } from "../Icons/icons"
+import Modal from "../Modal/Modal"
 const Timetable = () => {
   const [timetableParams, setTimetableParams] = useState([])
   const [currentDay, setCurrentDay] = useState(1)
+  const [currentDirName, setCurrentDirName] = useState("")
+  const [activeModal, setActiveModal] = useState(false)
   const info = async () => {
     const response = await api.get("/timetable_params")
     return response.data
+  }
+
+  const handleOpenModal = (name) =>{
+    setCurrentDirName(name)
+    setActiveModal(true)
   }
 
   useEffect(() => {
@@ -22,7 +30,12 @@ const Timetable = () => {
   }, [])
 
   return (
-    <div className="timetable_section">
+    <div id="time_table" className="timetable_section">
+      <Modal
+        active={activeModal}
+        setActive={setActiveModal}
+        nameOfDir={currentDirName}
+      />
       <span className="timetable_title">
         НАЙДИТЕ СВОЮ ПРАКТИКУ В НАШЕМ РАСПИСАНИИ
       </span>
@@ -83,6 +96,7 @@ const Timetable = () => {
                   style={{ display: "flex", flexDirection: "row" }}
                 >
                   <div
+                    onClick={() => handleOpenModal(elem.name)}
                     className="phone_pen_icons"
                     style={{
                       backgroundSize: "cover",

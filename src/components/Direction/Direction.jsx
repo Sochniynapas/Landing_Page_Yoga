@@ -42,7 +42,7 @@ const Direction = () => {
   }, [currentImage, buttonsSectionRef])
 
   return (
-    <div className="direction">
+    <div id="direction" className="direction">
       <span className="title_direct">ВСЕ НАПРАВЛЕНИЯ В ОДНОМ АБОНЕМЕНТЕ</span>
       <span className="desc_direct">
         Не определились с направлением?

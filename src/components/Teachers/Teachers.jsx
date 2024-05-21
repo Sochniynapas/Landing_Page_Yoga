@@ -44,7 +44,7 @@ const Teachers = () => {
   }, [])
 
   return (
-    <div className="teachers_section">
+    <div id="coachs" className="teachers_section">
       <span className="teachers_title">ЭКСПЕРТЫ В ОБЛАСТИ ТЕЛА И РАЗУМА</span>
       <span className="teachers_description">
         Наши инструктора сочетают свои знания и опыт, чтобы создать эффективные

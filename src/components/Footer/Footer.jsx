@@ -13,42 +13,42 @@ const Footer = () => {
       </div>
       <div className="nav_list">
         <li>
-          <a href="" className="footer_text">
+          <a href="#home" className="footer_text">
             Главная
           </a>
         </li>
         <li>
-          <a href="" className="footer_text">
+          <a href="#direction" className="footer_text">
             Направления
           </a>
         </li>
         <li>
-          <a href="" className="footer_text">
+          <a href="#cost" className="footer_text">
             Прайсы
           </a>
         </li>
         <li>
-          <a href="" className="footer_text">
+          <a href="#time_table" className="footer_text">
             Расписание
           </a>
         </li>
         <li>
-          <a href="" className="footer_text">
+          <a href="#coachs" className="footer_text">
             Эксперты
           </a>
         </li>
         <li>
-          <a href="" className="footer_text">
+          <a href="#cust_reviews" className="footer_text">
             Отзывы
           </a>
         </li>
         <li>
-          <a href="" className="footer_text">
+          <a href="#FAQ" className="footer_text">
             FAQ
           </a>
         </li>
         <li>
-          <a href="" className="footer_text">
+          <a href="#contacts" className="footer_text">
             Контакты
           </a>
         </li>

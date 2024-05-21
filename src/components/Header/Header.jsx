@@ -16,27 +16,27 @@ const Header = () => {
       <BalanceSvg />
       <ul className={isOpen ? "navbar" : "navbar disable"}>
         <li>
-          <a href="" className="page_elements">
+          <a href="#direction" className="page_elements">
             ПРОГРАММЫ
           </a>
         </li>
         <li>
-          <a href="" className="page_elements">
+          <a href="#cost" className="page_elements">
             ПРАЙСЫ
           </a>
         </li>
         <li>
-          <a href="" className="page_elements">
+          <a href="#time_table" className="page_elements">
             РАСПИСАНИЕ
           </a>
         </li>
         <li>
-          <a href="" className="page_elements">
+          <a href="#cust_reviews" className="page_elements">
             ОТЗЫВЫ
           </a>
         </li>
         <li>
-          <a href="" className="page_elements">
+          <a href="#contacts" className="page_elements">
             КОНТАКТЫ
           </a>
         </li>
