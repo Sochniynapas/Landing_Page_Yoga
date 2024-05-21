@@ -82,7 +82,7 @@ const Teachers = () => {
             <div className="next_tchs_img_obj">
               {(() => {
                 const elements = []
-                for (let i = 0; i < teachersInfo.length; i++) {
+                for (let i = 1; i < teachersInfo.length; i++) {
                   const element = teachersInfo[i]
                   if (teachersInfo[i].id + 1 != currentTeacher) {
                     elements.push(

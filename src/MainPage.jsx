@@ -6,6 +6,7 @@ import Header from "./components/Header/Header"
 import Home from "./components/Home/Home"
 import Teachers from "./components/Teachers/Teachers"
 import Timetable from "./components/TimeTable/Timetable.jsx"
+import YouCanFindUs from "./components/YouCanFindUs/YouCanFindUs.jsx"
 import "./main.css"
 
 const MainPage = () => {
@@ -19,6 +20,7 @@ const MainPage = () => {
       <Teachers />
       <CustomerReviews />
       <FAQ />
+      <YouCanFindUs />
     </div>
   )
 }
