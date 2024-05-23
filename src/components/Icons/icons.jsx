@@ -323,6 +323,23 @@ const TG = () => {
     </svg>
   )
 }
+const CloseIcon = () => {
+  return (
+    <svg
+      width="17"
+      height="17"
+      viewBox="0 0 17 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 16L15.9999 1M16 16L1.00006 1"
+        stroke="#98958B"
+        stroke-linecap="round"
+      />
+    </svg>
+  )
+}
 
 export {
   MainIcon,
@@ -337,5 +354,6 @@ export {
   Minus,
   VK,
   WhatsApp,
-  TG
+  TG,
+  CloseIcon
 }
