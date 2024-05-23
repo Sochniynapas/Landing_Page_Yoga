@@ -66,8 +66,8 @@ const Costs = () => {
 
             elements.push(
               <>
-                <div key={i - 100} className="pair">
-                  <div key={i} className="single_element_cc">
+                <div key={i} className="pair">
+                  <div className="single_element_cc">
                     <div style={{ display: "flex", alignItems: "end" }}>
                       <span
                         style={i === 7 ? { display: "none" } : null}
