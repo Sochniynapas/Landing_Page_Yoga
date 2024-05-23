@@ -19,7 +19,7 @@ const Costs = () => {
   }, [])
 
   return (
-    <div className="cost_section">
+    <div id="cost" className="cost_section">
       <span className="cost_title">СТОИМОСТЬ НАШИХ ТРЕНИРОВОК</span>
       <div className="cost_description">
         <span>После покупки абонемента его необходимо </span>

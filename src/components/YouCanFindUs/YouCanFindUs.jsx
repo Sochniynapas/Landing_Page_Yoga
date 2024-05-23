@@ -8,7 +8,7 @@ const YouCanFindUs = () => {
   const [checked, setChecked] = useState(false)
 
   return (
-    <div className="ycfu_section">
+    <div id="contacts" className="ycfu_section">
       <span className="ycfu_title">НАС МОЖНО НАЙТИ</span>
       <b className="connect_us">Свяжитесь с нами</b>
       <input

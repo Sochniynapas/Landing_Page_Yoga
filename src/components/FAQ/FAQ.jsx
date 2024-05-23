@@ -45,7 +45,7 @@ const FAQ = () => {
     }))
   }
   return (
-    <div className="FAQ_section">
+    <div id="FAQ" className="FAQ_section">
       <span className="FAQ_title">Всегда на связи с клиентом </span>
       <div className="FAQ_Flower_container">
         <div className="FAQ_Flower" style={{backgroundImage: "url('/src/components/Icons/FAQ_Flower.svg')"}}></div>

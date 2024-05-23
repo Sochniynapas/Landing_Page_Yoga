@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { MainIcon, MenuIcon, PhoneIcon } from "../Icons/icons.jsx"
+import { MenuIcon, PhoneIcon } from "../Icons/icons.jsx"
 import "./Header.css"
+import { BalanceSvg } from "../RepetitiveComponents/RepComponents.jsx"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,33 +13,30 @@ const Header = () => {
 
   return (
     <nav>
-      <div className="balance_and_svg">
-        <MainIcon />
-        <span className="balance">BALANCE</span>
-      </div>
+      <BalanceSvg />
       <ul className={isOpen ? "navbar" : "navbar disable"}>
         <li>
-          <a href="" className="page_elements">
+          <a href="#direction" className="page_elements">
             ПРОГРАММЫ
           </a>
         </li>
         <li>
-          <a href="" className="page_elements">
+          <a href="#cost" className="page_elements">
             ПРАЙСЫ
           </a>
         </li>
         <li>
-          <a href="" className="page_elements">
+          <a href="#time_table" className="page_elements">
             РАСПИСАНИЕ
           </a>
         </li>
         <li>
-          <a href="" className="page_elements">
+          <a href="#cust_reviews" className="page_elements">
             ОТЗЫВЫ
           </a>
         </li>
         <li>
-          <a href="" className="page_elements">
+          <a href="#contacts" className="page_elements">
             КОНТАКТЫ
           </a>
         </li>

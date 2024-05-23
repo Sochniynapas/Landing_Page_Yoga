@@ -5,6 +5,10 @@
   gap: 10px;
   padding-left: 10px;
 }
+.balance_and_svg {
+  display: flex;
+  align-items: center;
+}
 .app_btns button {
   display: flex;
   align-items: center;

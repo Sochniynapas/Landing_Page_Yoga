@@ -15,7 +15,7 @@ const Home = () => {
   const greenLineWidth = `${33 + (currentImage - 1) * 33}%`
 
   return (
-    <div className="home_view">
+    <div id="home" className="home_view">
       <span className="title">СТУДИЯ ЙОГИ И ПИЛАТЕСА</span>
       <span className="desc">
         Здесь мы поможем вам держать тело в тонусе, а душу - в гармонии.

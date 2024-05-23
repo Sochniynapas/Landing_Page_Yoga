@@ -1,4 +1,4 @@
-import { TG, VK, WhatsApp } from "../Icons/icons"
+import { MainIcon, TG, VK, WhatsApp } from "../Icons/icons"
 import "./RepComponents.css"
 
 const AppBtns = () => {
@@ -16,4 +16,12 @@ const AppBtns = () => {
     </div>
   )
 }
-export { AppBtns }
+const BalanceSvg = () => {
+  return (
+    <div className="balance_and_svg">
+      <MainIcon />
+      <span className="balance">BALANCE</span>
+    </div>
+  )
+}
+export { AppBtns, BalanceSvg }

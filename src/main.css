@@ -14,6 +14,7 @@
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 body {
   background-color: var(--color_bg);
@@ -53,7 +54,6 @@ body {
   background-color: transparent;
   transition: 0.3s ease-in-out;
 }
-
 .checker_input:checked::before {
   content: "✓";
   display: block;
