@@ -1,0 +1,282 @@
+@import url("/src/main.css");
+
+.ycfu_section {
+  display: grid;
+  width: 1200px;
+  height: 680px;
+  grid-template-columns: repeat(24, 50px);
+  grid-template-rows: repeat(34, 20px);
+  padding-top: 120px;
+}
+.connect_us {
+  display: none;
+}
+.i_question {
+  display: none;
+}
+.ycfu_title {
+  font-family: var(--new-yorkerc_style);
+  color: var(--color_1);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 62.4px;
+  letter-spacing: 0.007em;
+  text-align: left;
+  width: 499px;
+  height: 38px;
+  gap: 0px;
+  opacity: 0px;
+  padding-left: 2px;
+}
+.i_name {
+  grid-area: 8 / 1 / 9 / 7;
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  outline: none;
+  margin-left: 3px;
+  border: 0;
+  background-color: var(--color_bg);
+  border-bottom: 1px solid var(--color_3);
+}
+.i_phone {
+  grid-area: 8 / 8 / 9 / 14;
+  font-family: var(--raleway_style);
+  color: var(--color_2);
+  font-size: 14px;
+  outline: none;
+  margin-left: 3px;
+  border: 0;
+  background-color: var(--color_bg);
+  border-bottom: 1px solid var(--color_3);
+}
+.checker {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  grid-area: 8 / 15 / 9 / 19;
+}
+.politic {
+  font-family: var(--raleway_style);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 11.74px;
+  color: var(--color_2);
+  text-align: left;
+}
+.send {
+  grid-area: 7 / 20 / 9 / -1;
+  font-family: var(--raleway_style);
+  background-color: var(--color_1);
+  color: var(--color_bg);
+  border: 1px solid var(--color_1);
+  padding: 24px, 56px, 24px, 56px;
+  border-radius: 52.99px;
+  transition: 0.3s ease-in-out;
+  font-size: 15px;
+  line-height: 17.5px;
+  gap: 13.25px;
+  height: 55px;
+  width: 248px;
+  cursor: pointer;
+  text-align: center;
+}
+.send:hover {
+  background-color: var(--color_bg);
+  color: var(--color_1);
+}
+.map {
+  grid-area: 12 / 1 / -1 / -1;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.connection_variants {
+  display: flex;
+  flex-direction: column;
+  grid-area: 16 / 3 / 32 / 11;
+  background-color: var(--color_1);
+  gap: 20px;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+.connection_variants svg path {
+  stroke: var(--color_bg);
+}
+.connection_variants span {
+  font-family: var(--raleway_style);
+  color: var(--color_bg);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  text-align: left;
+}
+.svg_text_variant {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.FUs_flower{
+  width: 200px;
+  height: 240px;
+  grid-area: 22 / 8 / 25 / 12;
+  transform: scaleX(-1) rotate(90deg);
+  background-size: contain;
+}
+
+@media screen and (max-width: 1194px) {
+  .ycfu_section {
+    width: 700px;
+    height: 730px;
+    grid-template-columns: repeat(14, 50px);
+    grid-template-rows: repeat(49, 15px);
+    padding-top: 70px;
+  }
+  .ycfu_title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+    width: 331px;
+    height: 25px;
+  }
+  .i_name {
+    grid-area: 8 / 1 / 9 / 5;
+  }
+  .i_phone {
+    grid-area: 8 / 6 / 9 / 10;
+  }
+  .checker {
+    grid-area: 8 / 11 / 9 / 15;
+  }
+  .send {
+    grid-area: 14 / 1 / 15 / 8;
+  }
+  .connect_us {
+    display: none;
+  }
+  .i_question {
+    display: none;
+  }
+  .send:hover {
+    background-color: var(--color_bg);
+    color: var(--color_1);
+  }
+  .map {
+    grid-area: 20 / 1 / -1 / -1;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    background-position: center center;
+  }
+  .connection_variants {
+    grid-area: 27 / 1 / 44 / 8;
+    padding-top: 40px;
+    padding-left: 34px;
+  }
+  .connection_variants svg path {
+    stroke: var(--color_bg);
+  }
+  .svg_text_variant {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .FUs_flower{
+    width: 200px;
+    height: 240px;
+    grid-area: 31 / 5 / 35 / 8;
+    transform: scaleX(-1) rotate(90deg);
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ycfu_section {
+    width: 325px;
+    height: 850px;
+    grid-template-columns: repeat(13, 25px);
+    grid-template-rows: repeat(34, 25px);
+    padding-top: 70px;
+  }
+  .ycfu_title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.2px;
+    width: 269px;
+    height: 25px;
+  }
+  .i_name {
+    grid-area: 5 / 1 / 5 / 7;
+  }
+  .i_phone {
+    grid-area: 5 / 8 / 5 / -1;
+  }
+  .checker {
+    grid-area: 9 / 1 / 9 / 9;
+  }
+  .send {
+    grid-area: 11 / 1 / 12 / 5;
+    width: 154px;
+    height: 43px;
+  }
+  .connect_us {
+    display: block;
+    grid-area: 4 / 1 / 4 / 7;
+    font-family: var(--raleway_style);
+    color: var(--color_2);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: left;
+    padding-left: 4px;
+  }
+  .i_question {
+    display: block;
+    grid-area: 7 / 1 / 7 / -1;
+    font-family: var(--raleway_style);
+    color: var(--color_2);
+    font-size: 14px;
+    outline: none;
+    margin-left: 3px;
+    border: 0;
+    background-color: var(--color_bg);
+    border-bottom: 1px solid var(--color_3);
+  }
+  .send:hover {
+    background-color: var(--color_bg);
+    color: var(--color_1);
+  }
+  .map {
+    grid-area: 15 / 1 / -1 / -1;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    background-position: right;
+  }
+  .connection_variants {
+    grid-area: 15 / 1 / 22 / -1;
+    padding-top: 40px;
+    padding-left: 34px;
+  }
+  .connection_variants svg path {
+    stroke: var(--color_bg);
+  }
+  .svg_text_variant {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .FUs_flower{
+    width: 200px;
+    height: 240px;
+    grid-area: 15 / 7 / 16 / -1;
+    transform: scaleX(1) rotate(0deg);
+    background-size: contain;
+  }
+  
+}

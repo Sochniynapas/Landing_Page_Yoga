@@ -1,0 +1,60 @@
+.app_btns {
+  grid-area: 28 / 4 / 29 / 8;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-left: 10px;
+}
+.balance_and_svg {
+  display: flex;
+  align-items: center;
+}
+.app_btns button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--color_1);
+  border: 1px solid var(--color_bg);
+  transition: 0.3s ease-in-out;
+}
+.app_btns button:hover {
+  background-color: var(--color_bg);
+  transition: 0.3s ease-in-out;
+}
+.app_btns button:hover path {
+  stroke: var(--color_1);
+  fill: var(--color_1);
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1194px) {
+  .app_btns {
+    grid-area: 39 / 1 / 40 / 8;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .app_btns {
+    grid-area: 11 / 8 / 11 / -1;
+    padding-left: 0px;
+  }
+  .app_btns button {
+    background-color: var(--color_bg);
+    border: 1px solid var(--color_1);
+  }
+  .app_btns button path {
+    fill: var(--color_1);
+  }
+  .app_btns button:hover {
+    background-color: var(--color_1);
+    transition: 0.3s ease-in-out;
+  }
+  .app_btns button:hover path {
+    fill: var(--color_bg);
+    transition: 0.3s ease-in-out;
+  }
+}

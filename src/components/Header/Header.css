@@ -23,10 +23,6 @@
 .navbar li a:hover {
   color: var(--color_1);
 }
-.balance_and_svg {
-  display: flex;
-  align-items: center;
-}
 .phone_and_svg {
   display: flex;
   align-items: center;
